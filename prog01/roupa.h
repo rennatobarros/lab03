@@ -9,7 +9,7 @@ class Roupa : public Produto{
 
 public:
 	Roupa();
-	Roupa(string _codigo, string _descricao, float _preco, string _marca, string _sexo, string _tamanho);
+	Roupa(string codigo, string descricao, float preco, string _marca, string _sexo, string _tamanho);
 	~Roupa();
 private:
 	string marca;

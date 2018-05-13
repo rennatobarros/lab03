@@ -9,7 +9,7 @@ class Bebida : public Produto
 {
 public:
 	Bebida();
-	Fruta(string _codigo, string _descricao, float _preco, float _teor_alcool);
+	Bebida(string codigo, string descricao, float preco, float _teor_alcool);
 	~Bebida();
 private:
 	float teor_alcool;
