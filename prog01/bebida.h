@@ -17,7 +17,7 @@ public:
 	// getters
 	float getTeorAlcool();
 	// setters
-	void setTeorAlcool();
+	void setTeorAlcool(float);
 private:
 	std::ostream& print(std::ostream &o) const;
 };
