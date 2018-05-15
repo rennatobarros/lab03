@@ -41,3 +41,17 @@ Produto::setPreco(double _preco) {
 std::ostream& operator<< (std::ostream &o, Produto const &p) {
 	return p.print(o);
 }
+
+// Métodos para sobrecarga
+
+double Produto::operator+(Produto const &p) const{
+	return (this->m_preco + p.m_preco);
+}
+
+double Produto::operator-(Produto const &p) const{
+	return (this->m_preco - p.m_preco);
+}
+
+bool Produto::operator==(Produto const &p) const{
+	return (this->m_cod_barras == p.m_cod_barras);
+}

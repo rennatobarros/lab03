@@ -22,8 +22,13 @@ public:
 	void setCodBarras(std::string _codigo);
 	void setDescricao(std::string _descricao);
 	void setPreco(double _preco);
-	//
-	friend std::ostream& operator<< (std::ostream &o, Produto const &t);  
+	
+	// Sobrecarga de operadores
+	friend std::ostream& operator<< (std::ostream &o, Produto const &t);
+	double operator+(Produto const &p) const;
+	double operator-(Produto const &p) const;
+	bool operator==(Produto const &p) const;
+
 private:
 	virtual std::ostream& print(std::ostream&) const = 0;
 };
