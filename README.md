@@ -1,6 +1,6 @@
 # Laboratório 03 da disciplina IMD0030
 
-- Questão 01
+## Questão 01
 Crie uma hierarquia de classes de domínio para uma loja que vende os seguintes Produtos: Roupa,
 Bebida e Fruta. Sobrescreva o operador de inserção em stream “<<” para cada classe, de modo que
 o uso do mesmo imprima:
@@ -27,7 +27,7 @@ resolveu voltar para te ajudar. Para isso, dentro de seu tempo disponível, ele 
 inicial, disponível através do endereço https://github.com/imdcode/teobaldo.git e descreveu o que
 deve ser feito no arquivo README.md.
 
-- Questão 02
+## Questão 02
 Implemente em C++ as respectivas classes, atributos e métodos (incluindo construtores e destrutor)
 necessários para atender às seguintes abstrações:
 
@@ -44,6 +44,6 @@ depósitos, emissão de saldo e extrato, além de transferência entre contas.
 Especificamente com relação à emissão de extrato, seu programa deverá exibir a lista de
 movimentações realizadas por meio da sobrecarga do operador de inserção em stream (<<).
 
-- Questão 03
+## Questão 03
 Utilizando de abstração e do conceito de herança, altere o programa da questão 2 para permitir a
 manipulação de dois tipos de contas: conta corrente e conta poupança.
