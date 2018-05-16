@@ -1,10 +1,17 @@
+/**
+* @file     main.cpp
+* @brief    Arquivo principal do programa.
+* @author   Renato Barros de Lima Freitas
+* @since    11/05/2018
+* @date     15/05/2018
+*/
+
 #include <iostream>
 #include <vector>
 #include <memory>
 #include <fstream>
 #include <sstream>
 #include <string>
-#include <algorithm>
 
 #include "produto.h"
 #include "fruta.h"
@@ -143,6 +150,9 @@ int main(int argc, char const *argv[])
 	for (auto i = lista.begin(); i != lista.end(); ++i){
 		std::cout << (**i) << std::endl;	
 	}
+
+	cout << "Soma entre produtos: " << *lista[0] + *lista[1] << endl;
+	cout << "Diferença entre produtos: " << *lista[0] - *lista[1] << endl;
 
 	return 0;
 }
