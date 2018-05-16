@@ -29,6 +29,6 @@ std::ostream& Bebida::print(std::ostream &o) const {
 	o << setfill (' ') << setw (10) << m_cod_barras << " | " 
 		<< setfill ('.') << setw (20) << m_descricao << " | " 
 		<< setfill (' ') << setw (5) << m_preco << " | "
-		<< setfill (' ') << setw (10) << teor_alcool;
+		<< setfill (' ') << setw (10) << teor_alcool << "%";
 	return o;
 }
