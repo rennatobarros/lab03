@@ -60,3 +60,34 @@ std::ostream& operator<< (std::ostream &o, Conta &conta){
 	
 	return o;
 }
+
+std::istream& operator>> (std::istream &i, Conta &conta){
+	int temp;
+	string status;
+	bool temp_b;
+
+	cout << "Digite o número da conta: ";
+	i >> temp;
+	conta.setNumConta(temp);
+
+	cout << "Digite a agência: ";
+	i >> temp;
+	conta.setNumAgencia(temp);
+
+	cout << "Digite o status da conta: ";
+	i >> status;
+	if (status == "Conta Especial"){
+		temp_b = true;
+	}else{
+		temp_b = false;
+	}
+
+	conta.setIsContaEspecial(temp_b);
+
+	cout << "Digite o saldo inicial da conta: R$";
+	i >> temp;
+	conta.setSaldo(temp);
+	cout << endl;
+
+	return i;
+}

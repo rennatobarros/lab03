@@ -34,6 +34,7 @@ public:
 	void setIsContaEspecial(bool);
 
 	friend std::ostream& operator<< (std::ostream &o, Conta &conta);
+	friend std::istream& operator>> (std::istream &i, Conta &conta);
 
 private:
 	int num_agencia;
