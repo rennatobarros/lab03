@@ -42,7 +42,7 @@ private:
 	int num_agencia;
 	int num_conta;
 	int saldo;
-	vector<shared_ptr<Movimentacao>> movimentacao;
+	vector<Movimentacao> movimentacao;
 	int limite;
 	bool is_conta_especial;
 };
