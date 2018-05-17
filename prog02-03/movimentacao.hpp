@@ -19,7 +19,7 @@ public:
 	void setDescricao(string);
 	void setTipo(int);
 
-	friend std::ostream& operator<< (std::ostream &o, Movimentacao &_movimentacao);
+	friend std::ostream& operator<< (std::ostream &o, Movimentacao &movimentacao);
 
 private:
 	int valor;

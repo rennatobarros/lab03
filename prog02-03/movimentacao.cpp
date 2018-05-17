@@ -34,3 +34,11 @@ void Movimentacao::setDescricao(string d){
 void Movimentacao::setTipo(string t){
 	tipo = t;
 }
+
+std::ostream& operator<< (std::ostream &o, Movimentacao &movimentacao){
+	o << "Descrição: " << movimentacao.getDescricao() << std::endl;
+	o << "Tipo: " << movimentacao.getTipo() << std::endl;
+	o << "Valor: R$" << movimentacao.getValor() << std::endl;
+
+	return o;
+}

@@ -29,6 +29,8 @@ public:
 	void setLimite(int);
 	void setContaEspecial(bool);
 
+	friend std::ostream& operator<< (std::ostream &o, Conta &conta);
+
 private:
 	int num_agencia;
 	int num_conta;

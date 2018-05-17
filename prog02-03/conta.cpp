@@ -48,3 +48,14 @@ void Conta::setLimite(int _limite){
 void Conta::setIsContaEspecial(bool _is_conta_especial){
 	is_conta_especial = _is_conta_especial;
 }
+
+std::ostream& operator<< (std::ostream &o, Conta &conta){
+
+	o << "=====================CONTA===================" << endl;
+	o << "Agência: " << conta.getNumAgencia() << endl;
+	o << "Número da conta: " << conta.getNumConta() << endl;
+	o << "Status da conta: " << conta.getIsContaEspecial()? "Conta Especial": "Conta Normal" << endl;
+	o << "Saldo: R$" << conta.getSaldo() << endl;
+	
+	return o;
+}
