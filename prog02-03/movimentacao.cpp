@@ -1,9 +1,8 @@
-#include <iostream>
 #include "movimentacao.hpp"
 
 Movimentacao::Movimentacao(){}
 
-Movimentacao::Movimentacao(string _descricao, string _tipo, int _valor){
+Movimentacao::Movimentacao(int _valor, string _descricao, string _tipo){
 	descricao 	= _descricao;
 	tipo 		= _tipo;
 	valor 		= _valor;

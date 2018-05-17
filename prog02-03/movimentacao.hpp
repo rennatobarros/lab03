@@ -1,6 +1,9 @@
 #ifndef _MOVIMENTACAO_HPP_
 #define _MOVIMENTACAO_HPP_
 
+#include <iostream>
+#include <string>
+
 using std::string;
 
 class Movimentacao{
@@ -17,7 +20,7 @@ public:
 	// setters
 	void setValor(int);
 	void setDescricao(string);
-	void setTipo(int);
+	void setTipo(string);
 
 	friend std::ostream& operator<< (std::ostream &o, Movimentacao &movimentacao);
 

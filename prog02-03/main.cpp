@@ -39,8 +39,8 @@ int main(int argc, char const *argv[]){
 					break;
 			default:
 					cout << "Opção inválida!!!" << endl;
-		}while(op != 0);
-	}
+		}
+	}while(op != 0);
 
 	return 0;
 }
