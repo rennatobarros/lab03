@@ -1,9 +1,12 @@
 #include <iostream>
+#include <memory>
 
 #include "conta.hpp"
 #include "movimentacao.hpp"
 
 using namespace std;
+
+vector<shared_ptr<Conta>> contas;
 
 int main(int argc, char const *argv[]){
 	
@@ -34,12 +37,9 @@ int main(int argc, char const *argv[]){
 					break;
 			case 6:
 					break;
-			case 0:
-					return 0;
-					break;
 			default:
 					cout << "Opção inválida!!!" << endl;
-		};
+		}while(op != 0);
 	}
 
 	return 0;
