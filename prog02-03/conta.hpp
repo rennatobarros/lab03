@@ -26,12 +26,14 @@ public:
 	int getSaldo();
 	int getLimite();
 	bool getIsContaEspecial();
+	vector<Movimentacao> *getMovimentacao();
 	// setters
 	void setNumAgencia(int);
 	void setNumConta(int);
 	void setSaldo(int);
 	void setLimite(int);
 	void setIsContaEspecial(bool);
+	void adicionaMovimentacao(int, string, string);
 
 	friend std::ostream& operator<< (std::ostream &o, Conta &conta);
 	friend std::istream& operator>> (std::istream &i, Conta &conta);

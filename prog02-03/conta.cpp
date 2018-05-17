@@ -29,6 +29,15 @@ bool Conta::getIsContaEspecial(){
 	return is_conta_especial;
 }
 
+vector<Movimentacao> *Conta::getMovimentacoes(){
+ 	return &movimentacao; 
+}
+
+void Conta::adicionaMovimentacao(int valor, string descricao, string tipo){	
+	Movimentacao m(valor, descricao, tipo);
+	movimentacoes.push_back(m);
+}
+
 void Conta::setNumAgencia(int _num_agencia){
 	num_agencia = _num_agencia;
 }
