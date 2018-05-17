@@ -1,11 +1,9 @@
-#ifndef _MOVIMENTACAO_H_
-#define _MOVIMENTACAO_H_
-
-#include "conta.h"
+#ifndef _MOVIMENTACAO_HPP_
+#define _MOVIMENTACAO_HPP_
 
 using std::string;
 
-class Movimentacao : public Conta{
+class Movimentacao{
 
 public:
 	Movimentacao();
@@ -20,6 +18,8 @@ public:
 	void setValor(int);
 	void setDescricao(string);
 	void setTipo(int);
+
+	friend std::ostream& operator<< (std::ostream &o, Movimentacao &_movimentacao);
 
 private:
 	int valor;
