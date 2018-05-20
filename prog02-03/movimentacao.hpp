@@ -1,3 +1,8 @@
+/**
+ * @file movimentacao.hpp
+ * @brief Arquivo com as definições da movimentação de uma conta
+ */
+
 #ifndef _MOVIMENTACAO_HPP_
 #define _MOVIMENTACAO_HPP_
 
@@ -9,24 +14,40 @@ using std::string;
 class Movimentacao{
 
 public:
+	/** Contrutor padrão sem parametros */
 	Movimentacao();
-	Movimentacao(int, string, string);
+
+	/**
+	 * @brief      Construtor padrão com parametros
+	 *
+	 * @param  <unnamed>  Double com o valor da movimentação
+	 * @param  <unnamed>  String com a descricao da movimentação
+	 * @param  <unnamed>  String com a descrição da movimentação
+	 */
+	Movimentacao(double, string, string);
+	
+	/** Destrutor padrão */
 	~Movimentacao();
 public:
-	// getters
-	int getValor();
+	// Getters
+	double getValor();
 	string getDescricao();
 	string getTipo();
-	// setters
-	void setValor(int);
+	// Setters
+	void setValor(double);
 	void setDescricao(string);
 	void setTipo(string);
 
-	friend std::ostream& operator<< (std::ostream &o, Movimentacao &movimentacao);
+	friend std::ostream& operator<< (std::ostream &o, Movimentacao &m);
 
 private:
-	int valor;
+	/** Armazena o valor da movimentação */
+	double valor;
+
+	/** Armazena a descrição da movimentação */
 	string descricao;
+
+	/** Armazena o tipo da movimentação */
 	string tipo;
 };
  
