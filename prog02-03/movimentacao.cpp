@@ -12,6 +12,13 @@ using namespace std;
 Movimentacao::Movimentacao(){}
 
 
+/**
+ * @brief      Construtor com parametros
+ *
+ * @param  _valor      Valor da movimentação
+ * @param  _descricao  Descrição da movimentação
+ * @param  _tipo       Tipo da movimentação
+ */
 Movimentacao::Movimentacao(double _valor, string _descricao, string _tipo):
 	valor(_valor), descricao(_descricao), tipo(_tipo){}
 

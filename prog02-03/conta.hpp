@@ -25,7 +25,7 @@ public:
 	Conta();
 
 	/** Construtor padrão parametrizado */
-	Conta(int, int, int, bool);
+	Conta(string, string, double, bool);
 	
 	/** Destrutor padrão */
 	virtual ~Conta();
