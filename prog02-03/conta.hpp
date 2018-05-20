@@ -1,3 +1,8 @@
+/**
+ * @file conta.hpp
+ * @brief Classe base da Conta
+ */
+
 #ifndef _CONTA_HPP_
 #define _CONTA_HPP_
 
@@ -7,44 +12,64 @@
 
 using std::vector;
 using std::shared_ptr;
+using std::string;
 
 using namespace std;
 
 #include "movimentacao.hpp"
 
-
 class Conta{
 
 public:
+	/** Construtor padrão sem parametros */
 	Conta();
-	Conta(int, int, int, int, bool);
-	~Conta();
+
+	/** Construtor padrão parametrizado */
+	Conta(int, int, int, bool);
+	
+	/** Destrutor padrão */
+	virtual ~Conta();
+
+protected:
+	/** Armezena o número da Agencia */
+	string num_agencia;
+
+	/** Armazena o numero da conta */
+	string num_conta;
+
+	/** Armazena o saldo da conta */
+	double saldo;
+
+	/** Armazena um vetor para armazenar as movimentações da conta */
+	vector<Movimentacao> movimentacao;
+	
+	/** True se a conta for especial. False caso contrário */
+	bool is_conta_especial;
+
 public:
-	// getters
-	int getNumAgencia();
-	int getNumConta();
-	int getSaldo();
-	int getLimite();
+	// Getters
+	string getNumAgencia();
+	string getNumConta();
+	double getSaldo();
 	bool getIsContaEspecial();
 	vector<Movimentacao> *getMovimentacao();
-	// setters
-	void setNumAgencia(int);
-	void setNumConta(int);
-	void setSaldo(int);
-	void setLimite(int);
+
+	// Setters
+	void setNumAgencia(string);
+	void setNumConta(string);
+	void setSaldo(string);
 	void setIsContaEspecial(bool);
-	void adicionaMovimentacao(int, string, string);
+	void adicionaMovimentacao(double, string, string);
 
-	friend std::ostream& operator<< (std::ostream &o, Conta &conta);
-	friend std::istream& operator>> (std::istream &i, Conta &conta);
+	// Sobrecarga de Operadores
+	bool operator== (Conta const &c) const;
+	friend std::ostream& operator<< (std::ostream &o, Conta &c);
+	friend std::istream& operator>> (std::istream &i, Conta &c);
 
-private:
-	int num_agencia;
-	int num_conta;
-	int saldo;
-	vector<Movimentacao> movimentacao;
-	int limite;
-	bool is_conta_especial;
+private: 
+	// Métodos de inserção e extração para os filhos dessa classe poderem enxergar 
+	virtual std::istream& read(std::istream&)=0;
+	virtual std::ostream& print(std::ostream&) const = 0 ;
 };
  
 #endif
