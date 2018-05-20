@@ -5,7 +5,7 @@ APPDIR = application
 OBJDIR = build
 
 CC = g++
-CFLAGS = -O2 -Wall -std=c++11 -pedantic -I $(INCLUDEDIR)
+CFLAGS = -O0 -Wall -std=c++11 -pedantic -I $(INCLUDEDIR)
 
 BIN = ${BINDIR}/prog01
 APP = ${APPDIR}/main.cpp
