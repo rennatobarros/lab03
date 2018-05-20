@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Loja: Referência do Arquivo application/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Loja
+   </div>
+   <div id="projectbrief">Questão 1 do Laboratório 3.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d75c23162a2652451dce46d2e7e8aead.html">application</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Arquivo principal do programa.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="produto_8h_source.html">produto.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fruta_8h_source.html">fruta.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="roupa_8h_source.html">roupa.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bebida_8h_source.html">bebida.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a7cf3404d5353f4674c7f5ae49f146338"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7cf3404d5353f4674c7f5ae49f146338">adicionaProduto</a> (shared_ptr&lt; <a class="el" href="classProduto.html">Produto</a> &gt; p)</td></tr>
+<tr class="memdesc:a7cf3404d5353f4674c7f5ae49f146338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um produto na lista.  <a href="#a7cf3404d5353f4674c7f5ae49f146338">Mais...</a><br /></td></tr>
+<tr class="separator:a7cf3404d5353f4674c7f5ae49f146338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8854c6b00caa448a27af58b8bc142d49"><td class="memItemLeft" align="right" valign="top"><a id="a8854c6b00caa448a27af58b8bc142d49"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8854c6b00caa448a27af58b8bc142d49">lerProdutos</a> ()</td></tr>
+<tr class="memdesc:a8854c6b00caa448a27af58b8bc142d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método para ler os arquivos .dat. <br /></td></tr>
+<tr class="separator:a8854c6b00caa448a27af58b8bc142d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9e6b7e6f15df4b525a2e7705ba3089"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089">main</a> (int argc, char const *argv[])</td></tr>
+<tr class="memdesc:abf9e6b7e6f15df4b525a2e7705ba3089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que executa a principal parte do programa.  <a href="#abf9e6b7e6f15df4b525a2e7705ba3089">Mais...</a><br /></td></tr>
+<tr class="separator:abf9e6b7e6f15df4b525a2e7705ba3089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:aaefea3141f617b365b683397c98cf4b9"><td class="memItemLeft" align="right" valign="top">vector&lt; shared_ptr&lt; <a class="el" href="classProduto.html">Produto</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aaefea3141f617b365b683397c98cf4b9">lista</a></td></tr>
+<tr class="separator:aaefea3141f617b365b683397c98cf4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f5e006513b83f6de015097281a5695"><td class="memItemLeft" align="right" valign="top">ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a01f5e006513b83f6de015097281a5695">frutas</a></td></tr>
+<tr class="separator:a01f5e006513b83f6de015097281a5695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b176f20d63c041e49e2906940f6fe9f"><td class="memItemLeft" align="right" valign="top"><a id="a6b176f20d63c041e49e2906940f6fe9f"></a>
+ifstream&#160;</td><td class="memItemRight" valign="bottom"><b>bebidas</b></td></tr>
+<tr class="separator:a6b176f20d63c041e49e2906940f6fe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17eeb2c09ec5ed95bbde1943dccdc138"><td class="memItemLeft" align="right" valign="top"><a id="a17eeb2c09ec5ed95bbde1943dccdc138"></a>
+ifstream&#160;</td><td class="memItemRight" valign="bottom"><b>roupas</b></td></tr>
+<tr class="separator:a17eeb2c09ec5ed95bbde1943dccdc138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Arquivo principal do programa. </p>
+</div><h2 class="groupheader">Funções</h2>
+<a id="a7cf3404d5353f4674c7f5ae49f146338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf3404d5353f4674c7f5ae49f146338">&#9670;&nbsp;</a></span>adicionaProduto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int adicionaProduto </td>
+          <td>(</td>
+          <td class="paramtype">shared_ptr&lt; <a class="el" href="classProduto.html">Produto</a> &gt;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona um produto na lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Variável do shared_ptr que é um ponteiro para os produtos na lista</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>-1 caso já exista um produto baseado em seu código de barras. 1 caso não exista </dd></dl>
+
+</div>
+</div>
+<a id="abf9e6b7e6f15df4b525a2e7705ba3089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9e6b7e6f15df4b525a2e7705ba3089">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que executa a principal parte do programa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Inteiro que guarda a quantidade de argumentos passados </td></tr>
+    <tr><td class="paramname">argv</td><td>Vetor que guarda as strings passadas por linha de comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>0 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="a01f5e006513b83f6de015097281a5695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f5e006513b83f6de015097281a5695">&#9670;&nbsp;</a></span>frutas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ifstream frutas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arquivos .dat que serão lidos </p>
+
+</div>
+</div>
+<a id="aaefea3141f617b365b683397c98cf4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefea3141f617b365b683397c98cf4b9">&#9670;&nbsp;</a></span>lista</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;shared_ptr&lt;<a class="el" href="classProduto.html">Produto</a>&gt; &gt; lista</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dos produtos armazenados </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

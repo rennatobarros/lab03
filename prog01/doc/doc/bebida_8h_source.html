@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Loja: Código-Fonte de include/bebida.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Loja
+   </div>
+   <div id="projectbrief">Questão 1 do Laboratório 3.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bebida.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bebida_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _BEBIDA_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _BEBIDA_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="produto_8h.html">produto.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::string;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classBebida.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBebida.html">Bebida</a> : <span class="keyword">public</span> <a class="code" href="classProduto.html">Produto</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classBebida.html#afab3bc3b54a7e55049ed36fae3479dfb">Bebida</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classBebida.html#afab3bc3b54a7e55049ed36fae3479dfb">Bebida</a>(<span class="keywordtype">string</span> codigo, <span class="keywordtype">string</span> descricao, <span class="keywordtype">float</span> preco, <span class="keywordtype">float</span> _teor_alcool);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classBebida.html#a4ed0a8b2b0b464f2b39ef81a01e297ad">~Bebida</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> teor_alcool;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Getters</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classBebida.html#ae9d6e2972b60085c95d8335aeb45696c">getTeorAlcool</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// Setters</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBebida.html#a04034f4d36975d8d156c618065286b49">setTeorAlcool</a>(<span class="keywordtype">float</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::ostream&amp; print(std::ostream &amp;o) <span class="keyword">const</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classProduto_html"><div class="ttname"><a href="classProduto.html">Produto</a></div><div class="ttdef"><b>Definition:</b> produto.h:12</div></div>
+<div class="ttc" id="produto_8h_html"><div class="ttname"><a href="produto_8h.html">produto.h</a></div><div class="ttdoc">Arquivo .h com as definições da Classe produto. </div></div>
+<div class="ttc" id="classBebida_html"><div class="ttname"><a href="classBebida.html">Bebida</a></div><div class="ttdef"><b>Definition:</b> bebida.h:12</div></div>
+<div class="ttc" id="classBebida_html_a04034f4d36975d8d156c618065286b49"><div class="ttname"><a href="classBebida.html#a04034f4d36975d8d156c618065286b49">Bebida::setTeorAlcool</a></div><div class="ttdeci">void setTeorAlcool(float)</div><div class="ttdoc">Salva o teor alcolico. </div><div class="ttdef"><b>Definition:</b> bebida.cpp:44</div></div>
+<div class="ttc" id="classBebida_html_a4ed0a8b2b0b464f2b39ef81a01e297ad"><div class="ttname"><a href="classBebida.html#a4ed0a8b2b0b464f2b39ef81a01e297ad">Bebida::~Bebida</a></div><div class="ttdeci">~Bebida()</div><div class="ttdef"><b>Definition:</b> bebida.cpp:28</div></div>
+<div class="ttc" id="classBebida_html_ae9d6e2972b60085c95d8335aeb45696c"><div class="ttname"><a href="classBebida.html#ae9d6e2972b60085c95d8335aeb45696c">Bebida::getTeorAlcool</a></div><div class="ttdeci">float getTeorAlcool()</div><div class="ttdoc">Metódo que retorna o teor alcolico. </div><div class="ttdef"><b>Definition:</b> bebida.cpp:35</div></div>
+<div class="ttc" id="classBebida_html_afab3bc3b54a7e55049ed36fae3479dfb"><div class="ttname"><a href="classBebida.html#afab3bc3b54a7e55049ed36fae3479dfb">Bebida::Bebida</a></div><div class="ttdeci">Bebida()</div><div class="ttdef"><b>Definition:</b> bebida.cpp:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

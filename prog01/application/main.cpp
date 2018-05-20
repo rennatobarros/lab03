@@ -1,9 +1,11 @@
-/**
-* @file     main.cpp
-* @brief    Arquivo principal do programa.
-* @author   Renato Barros de Lima Freitas
-* @since    11/05/2018
-* @date     15/05/2018
+/** 
+ * @mainpage Loja
+ * @author Renato Barros de Lima Freitas
+ * @date 20/05/2018
+ * @version 1.0
+ *
+ * @file application/main.cpp
+ * @brief Arquivo principal do programa
 */
 
 #include <iostream>
@@ -20,12 +22,21 @@
 
 using namespace std;
 
+/** Lista dos produtos armazenados */
 vector<shared_ptr<Produto>> lista;
 
+/** Arquivos .dat que serão lidos */
 ifstream frutas;
 ifstream bebidas;
 ifstream roupas;
 
+/**
+ * @brief      Adiciona um produto na lista
+ *
+ * @param  p     Variável do shared_ptr que é um ponteiro para os produtos na lista
+ *
+ * @return     -1 caso já exista um produto baseado em seu código de barras. 1 caso não exista
+ */
 int adicionaProduto(shared_ptr<Produto> p){
 	for (auto it = lista.begin(); it != lista.end(); ++it){
 		if ((*p).getCodBarras() == (*it)->getCodBarras()){
@@ -37,6 +48,9 @@ int adicionaProduto(shared_ptr<Produto> p){
 	return 1;
 }
 
+/**
+ * @brief Método para ler os arquivos .dat
+ */
 void lerProdutos(){
 	frutas.open("Produtos/Frutas.dat");
 
@@ -138,8 +152,13 @@ void lerProdutos(){
 	}
 }
 
-int main(int argc, char const *argv[])
-{
+/**
+     * \brief Função que executa a principal parte do programa
+     * @param argc Inteiro que guarda a quantidade de argumentos passados
+     * @param argv Vetor que guarda as strings passadas por linha de comando
+     * \return 0
+*/
+int main(int argc, char const *argv[]){
 
 	adicionaProduto(make_shared<Fruta>("001002651-45","Maca verde",8.70,"01/10/2017",18));
 	adicionaProduto(make_shared<Bebida>("001002006-66", "Cerveja", 5.12, 12.6));

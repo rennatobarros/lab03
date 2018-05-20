@@ -1,5 +1,20 @@
 # Laboratório 03 da disciplina IMD0030
 
+
+## Utilização
+```sh
+# Digite o comando 'make' para compilar o projeto e criar um exécutável
+~/diretorio-exemplo$ make
+
+# Digite o comando abaixo para rodar o programa
+~/diretorio-exemplo$ ./bin/teste
+
+# Caso o make retorne algum erro deverá ser criado os diretórios que estejam faltando e rode o comando novamente
+~/diretorio-exemplo$ mkdir build
+~/diretorio-exemplo$ mkdir bin
+
+```
+
 ## Questão 01
 Crie uma hierarquia de classes de domínio para uma loja que vende os seguintes Produtos: Roupa,
 Bebida e Fruta. Sobrescreva o operador de inserção em stream “<<” para cada classe, de modo que
