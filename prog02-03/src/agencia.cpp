@@ -9,10 +9,17 @@ using namespace std;
 
 using std::string;
 
+/** Construtor padrão */
 Agencia::Agencia(){ contas = {}; }
 
+/** Destrutor padrão */
 Agencia::~Agencia(){}
 
+/**
+ * @brief      Cria uma conta
+ *
+ * @return     True se criou. False caso contrário
+ */
 bool Agencia::criarConta(){
 	int opcao;
 
@@ -23,9 +30,11 @@ bool Agencia::criarConta(){
 	cout << "Qual tipo da conta? (1) Corrente (2) Poupança" << endl;
 	cin >> opcao;
 
+	/** Dependendo da opção será criada uma conta poupança ou corrente */
 	if(opcao == 1){
 			
 		cin >> conta_c;
+		/** Verifica se a conta já existe */
 		for (auto i = contas.begin(); i != contas.end(); ++i){
 			if(**i == conta_c){
 				cout << "===============CONTA NÃO CRIADA==============" << endl;
@@ -59,6 +68,11 @@ bool Agencia::criarConta(){
 	
 }
 
+/**
+ * @brief      Realiza um depósito
+ *
+ * @return     True caso tenha ocorrido com sucesso. False caso contrário
+ */
 bool Agencia::realizarDeposito(){
 	string temp_agencia;
 	string temp_num_conta;
@@ -72,6 +86,7 @@ bool Agencia::realizarDeposito(){
 	cout << "\nDigite o valor que deseja depositar na conta: ";
 	cin >> temp_valor;
 	
+	/** Se não existir, faz o depósito */
 	for (auto i = contas.begin(); i < contas.end(); ++i){
 		if ((**i).getNumAgencia() != temp_agencia and (**i).getNumConta() != temp_num_conta){
 			(**i).setSaldo((**i).getSaldo() + temp_valor);
@@ -84,6 +99,11 @@ bool Agencia::realizarDeposito(){
 	return false;
 }
 
+/**
+ * @brief      Realiza um saque na conta
+ *
+ * @return     True caso tenha ocorrido com sucesso. False caso contrário
+ */
 bool Agencia::realizarSaque(){
 	string temp_agencia;
 	string temp_num_conta;
@@ -113,6 +133,11 @@ bool Agencia::realizarSaque(){
 	return false;
 }
 
+/**
+ * @brief      Realiza transferencia entre contas informadas pelo usuário
+ *
+ * @return     True caso tenha ocorrido com sucesso. False caso contrário
+ */
 bool Agencia::realizarTransferencia(){
  
 	string agencia_destino, agencia_remetente;
@@ -137,6 +162,7 @@ bool Agencia::realizarTransferencia(){
 	string descricao1 = "Transferencia para a conta ";
 	string descricao2 = "Transferencia da conta ";
 
+	/** Indicam se os procedimentos foram bem sucedidos */
 	bool saque = false;
 	bool deposito = false;
 
@@ -166,6 +192,11 @@ bool Agencia::realizarTransferencia(){
 	return false;
 }
 
+/**
+ * @brief      Emite o extrato da conta
+ *
+ * @return     True caso tenha ocorrido com sucesso. False caso contrário
+ */
 bool Agencia::emitirExtratoConta(){
 	string temp_agencia;
 	string temp_num_conta;
@@ -190,6 +221,11 @@ bool Agencia::emitirExtratoConta(){
 
 }
 
+/**
+ * @brief      Emite o saldo da conta
+ *
+ * @return     True caso tenha ocorrido com sucesso. False caso contrário
+ */
 bool Agencia::emitirSaldoConta(){
 	string temp_agencia;
 	string temp_num_conta;
@@ -213,6 +249,11 @@ bool Agencia::emitirSaldoConta(){
 	return false;
 }
 
+/**
+ * @brief      Exclui a conta com base nas informaçoes passadas pelo usuario
+ *
+ * @return     True caso tenha ocorrido com sucesso. False caso contrário
+ */
 bool Agencia::excluirConta(){
 	string temp_num_conta, temp_agencia;
 

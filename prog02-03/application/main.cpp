@@ -1,3 +1,13 @@
+/** 
+ * @mainpage Banco
+ * @author Renato Barros de Lima Freitas
+ * @date 20/05/2018
+ * @version 1.0
+ *
+ * @file application/main.cpp
+ * @brief Arquivo principal do programa
+*/
+
 #include <iostream>
 #include <memory>
 
@@ -7,9 +17,10 @@
 using namespace std;
 
 int main(int argc, char const *argv[]){
-	
+	/** Objeto agencia que tem todos o métodos do banco */
 	Agencia agencia;
 
+	/** Armazena a opção digitada pelo usuário */
 	int op;
 
 	do{
