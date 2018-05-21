@@ -15,7 +15,7 @@ public:
 	/** Construtor padrão sem paramêtros */
 	Produto();
 
-	/** Construtor padrão parametrizado	 */
+	/** Construtor padrão parametrisado	 */
 	Produto(std::string _codigo, std::string _descricao, double _preco);
 
 	/**
