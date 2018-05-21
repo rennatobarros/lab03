@@ -57,7 +57,7 @@ public:
 	// Setters
 	void setNumAgencia(string);
 	void setNumConta(string);
-	void setSaldo(string);
+	void setSaldo(double);
 	void setIsContaEspecial(bool);
 	void adicionaMovimentacao(double, string, string);
 

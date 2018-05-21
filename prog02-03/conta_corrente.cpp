@@ -69,7 +69,7 @@ void ContaCorrente::setLimiteDisp(double _limite_disponivel){
  *
  * @return     Retorna as informações da conta corrente formatados
  */
-std::ostream& print (std::ostream &o){
+std::ostream& ContaCorrente::print (std::ostream &o)const {
 	o << "Limite: R$" << limite << endl;
 	o << "Limite Disponível: R$" << limite_disponivel << endl;
 	o << "============================================" << endl;
@@ -83,7 +83,7 @@ std::ostream& print (std::ostream &o){
  *
  * @return     Retorna os valores que serão recebidos com formatação
  */
-std::istream& print (std::istream &i){
+std::istream& ContaCorrente::read (std::istream &i){
 	cout << "Digite o limite da conta: R$";
 	i >> limite;
 	limite_disponivel = limite;

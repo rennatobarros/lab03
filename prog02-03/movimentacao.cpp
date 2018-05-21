@@ -57,7 +57,7 @@ string Movimentacao::getTipo(){
  *
  * @param  v     Novo valor da movimentação
  */
-void Movimentacao::setValor(int v){
+void Movimentacao::setValor(double v){
 	valor = v;
 }
 

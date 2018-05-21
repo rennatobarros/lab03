@@ -55,7 +55,7 @@ void ContaPoupanca::setJuros(double _juros){
  *
  * @return     Saída formatada para a conta poupança
  */
-std::ostream& ContaPoupanca::print(std::ostream &o){
+std::ostream& ContaPoupanca::print(std::ostream &o)const {
 	o << "Taxa de juros: " << juros << "%" << endl;
 	o << "============================================" << endl;
 	return o;

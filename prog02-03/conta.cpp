@@ -81,7 +81,7 @@ vector<Movimentacao> *Conta::getMovimentacao(){
 void Conta::adicionaMovimentacao(double valor, string descricao, string tipo){	
 	/** Cria um objeto do tipo movimentação e a adiciona */
 	Movimentacao m(valor, descricao, tipo);
-	movimentacao.push_back(mov);
+	movimentacao.push_back(m);
 }
 
 
@@ -128,8 +128,8 @@ void Conta::setIsContaEspecial(bool _is_conta_especial){
  *
  * @return     True caso sejam iguais. False caso contrário
  */
-bool Conta::operator== (Conta &c){
-	if (num_agencia == c.agencia and num_conta == c.num_conta){
+bool Conta::operator== (Conta const &c) const {
+	if (num_agencia == c.num_agencia and num_conta == c.num_conta){
 		return true;
 	}
 			
@@ -176,10 +176,10 @@ std::istream& operator>> (std::istream &i, Conta &c){
 	i >> temp;
 	c.setNumAgencia(temp);
 
-	cout << "Digite o status ('Conta Especial' ou 'Conta Normal') da conta: ";
+	cout << "Digite o status ('Conta Especial = 1' ou 'Conta Normal = 0') da conta: ";
 	i >> temp;
 	/** Operador ternário para salvar se é conta especial */
-	c.setIsContaEspecial(temp == "Conta Especial"? true : false);
+	c.setIsContaEspecial(temp == "1"? true : false);
 
 	cout << "Digite o saldo inicial da conta: R$";
 	i >> temp;
